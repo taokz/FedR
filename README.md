@@ -15,4 +15,4 @@ One code demo of reconstruction attack is shown in `rec_attack_fedr_fb15k_TransE
 
 ### Citation
 Please cite our paper if you find this code useful for your research.
-For any clarification, comments, or suggestions please create an issue or contact deepakn1019@gmail.com
+For any clarification, comments, or suggestions please create an issue or contact kaz321@lehigh.edu
