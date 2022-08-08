@@ -1,9 +1,6 @@
 # Federated Learning on Knowledge Graphs
 
-PyTorch code that accompanies the paper [Efficient Federated Learning on Knowledge Graphs via Privacy-preserving Relation Embedding Aggregation](https://arxiv.org/pdf/2203.09553.pdf).
-This repo is built upon previous work **FedE** ([paper](https://arxiv.org/pdf/2010.12882.pdf) and [code](https://github.com/AnselCmy/FedE)). 
-
-Our work contains **Knowledge Graph Reconstruction Attack** and the federated version of the following Knowledge Graph algorithms: TransE, RotatE, ComplEx, DistMult, NoGE and KB-GAT.
+PyTorch code that accompanies the paper [Efficient Federated Learning on Knowledge Graphs via Privacy-preserving Relation Embedding Aggregation](https://arxiv.org/pdf/2203.09553.pdf). Our work contains **Knowledge Graph Reconstruction Attack** and the federated version of the following Knowledge Graph algorithms: TransE, RotatE, ComplEx, DistMult, NoGE and KB-GAT.
 
 ### Prepare Dataset: 
 There is a data preprocessing file `dataset.ipynb` which allows split triples randomly. 
