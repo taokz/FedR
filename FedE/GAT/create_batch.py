@@ -56,7 +56,8 @@ class Corpus:
             self.train_triples + self.validation_triples + self.test_triples)}
         # print("Total triples count {}, training triples {}, validation_triples {}, test_triples {}".format(len(self.valid_triples_dict), len(self.train_indices),
         #                                                                                                    len(self.validation_indices), len(self.test_indices)))
-
+        self.train_triples_dict = {j: i for i,j in enumerate(self.train_triples)}
+        
         # For training purpose
         self.batch_indices = np.empty(
             (self.batch_size * (self.invalid_valid_ratio + 1), 3)).astype(np.int32)
@@ -96,7 +97,7 @@ class Corpus:
                         current_index = i * (self.invalid_valid_ratio // 2) + j
 
                         while (random_entities[current_index], self.batch_indices[last_index + current_index, 1],
-                               self.batch_indices[last_index + current_index, 2]) in self.valid_triples_dict.keys():
+                               self.batch_indices[last_index + current_index, 2]) in self.train_triples_dict.keys():
                             random_entities[current_index] = np.random.randint(
                                 0, self.nentity)
                         self.batch_indices[last_index + current_index,
@@ -109,7 +110,7 @@ class Corpus:
                             (i * (self.invalid_valid_ratio // 2) + j)
 
                         while (self.batch_indices[last_index + current_index, 0], self.batch_indices[last_index + current_index, 1],
-                               random_entities[current_index]) in self.valid_triples_dict.keys():
+                               random_entities[current_index]) in self.train_triples_dict.keys():
                             random_entities[current_index] = np.random.randint(
                                 0, self.nentity)
                         self.batch_indices[last_index + current_index,
@@ -153,7 +154,7 @@ class Corpus:
                         current_index = i * (self.invalid_valid_ratio // 2) + j
 
                         while (random_entities[current_index], self.batch_indices[last_index + current_index, 1],
-                               self.batch_indices[last_index + current_index, 2]) in self.valid_triples_dict.keys():
+                               self.batch_indices[last_index + current_index, 2]) in self.train_triples_dict.keys():
                             random_entities[current_index] = np.random.randint(
                                 0, self.nentity)
                         self.batch_indices[last_index + current_index,
@@ -166,7 +167,7 @@ class Corpus:
                             (i * (self.invalid_valid_ratio // 2) + j)
 
                         while (self.batch_indices[last_index + current_index, 0], self.batch_indices[last_index + current_index, 1],
-                               random_entities[current_index]) in self.valid_triples_dict.keys():
+                               random_entities[current_index]) in self.train_triples_dict.keys():
                             random_entities[current_index] = np.random.randint(
                                 0, self.nentity)
                         self.batch_indices[last_index + current_index,
