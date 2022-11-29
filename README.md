@@ -14,9 +14,11 @@ Some examples of reconstruction attack are shown in `rec_attack_fedr_fb15k_Trans
 Please cite our paper if you find this code useful for your research.
 For any clarification, comments, or suggestions please create an issue or contact kaz321@lehigh.edu
 
-@article{zhang2022efficient,
-  title={Efficient Federated Learning on Knowledge Graphs via Privacy-preserving Relation Embedding Aggregation},
-  author={Zhang, Kai and Wang, Yu and Wang, Hongyi and Huang, Lifu and Yang, Carl and Sun, Lichao},
-  journal={arXiv preprint arXiv:2203.09553},
-  year={2022}
+```
+@article{fedr,
+      title={Efficient Federated Learning on Knowledge Graphs via Privacy-preserving Relation Embedding Aggregation}, 
+      author={Zhang, Kai and Wang, Yu and Wang, Hongyi and Huang, Lifu and Yang, Carl and Chen, Xun and Sun, Lichao},
+      journal={EMNLP},
+      year={2022},
 }
+```
