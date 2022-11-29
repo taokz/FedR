@@ -18,7 +18,7 @@ For any clarification, comments, or suggestions please create an issue or contac
 @article{fedr,
       title={Efficient Federated Learning on Knowledge Graphs via Privacy-preserving Relation Embedding Aggregation}, 
       author={Zhang, Kai and Wang, Yu and Wang, Hongyi and Huang, Lifu and Yang, Carl and Chen, Xun and Sun, Lichao},
-      journal={EMNLP},
+      journal={Findings of EMNLP},
       year={2022},
 }
 ```
