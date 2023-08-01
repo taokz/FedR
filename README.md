@@ -22,3 +22,7 @@ For any clarification, comments, or suggestions please create an issue or contac
       year={2022},
 }
 ```
+### Acknowledgement
+- [FedE](https://github.com/AnselCmy/FedE)
+- [GNN-NoGE](https://github.com/daiquocnguyen/GNN-NoGE)
+- [kg-reeval](https://github.com/svjan5/kg-reeval)
