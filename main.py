@@ -427,7 +427,7 @@ if __name__ == '__main__':
     parser.add_argument('--state_dir', '-state_dir', default='./state', type=str)
     parser.add_argument('--log_dir', '-log_dir', default='./log', type=str)
     parser.add_argument('--tb_log_dir', '-tb_log_dir', default='./tb_log', type=str)
-    parser.add_argument('--run_mode', default='FedE', choices=['FedE', 'Single', 'test_pretrain'])
+    parser.add_argument('--run_mode', default='FedR', choices=['FedR', 'Single', 'test_pretrain'])
     parser.add_argument('--num_multi', default=3, type=int)
 
     parser.add_argument('--model', default='TransE', choices=['TransE', 'RotatE', 'DistMult', 'ComplEx'])
